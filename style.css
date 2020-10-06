@@ -48,4 +48,8 @@ header {
 }
 .text-right {
 	 text-align: right;
-}	 
+}
+
+button {
+	margin: 5px;
+}
