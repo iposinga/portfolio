@@ -25,7 +25,7 @@ if(dbConnect())
 </head>
 <body>
 	<header>
-		Studenten portfoliopproject 1e jaars SD
+        <h1>Studenten portfoliopproject 1e jaars SD</h1>
 		<nav>
 			<button onclick="window.location.href='studenten.php?klas=B-ITA4-1a'">klas 1a</button><button onclick="window.location.href='studenten.php?klas=B-ITA4-1a&cl=CL1'">cluster 1a-cl1</button><button onclick="window.location.href='studenten.php?klas=B-ITA4-1a&cl=CL2'">cluster 1a-cl2</button><br>
 			<button onclick="window.location.href='studenten.php?klas=B-ITA4-1b'">klas 1b</button><button onclick="window.location.href='studenten.php?klas=B-ITA4-1b&cl=CL1'">cluster 1b-cl1</button><button onclick="window.location.href='studenten.php?klas=B-ITA4-1b&cl=CL2'">cluster 1b-cl2</button>
