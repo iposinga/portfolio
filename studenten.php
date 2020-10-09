@@ -41,6 +41,7 @@ if(dbConnect())
 				<th class="text-left">Voornaam</th>
 				<th class="text-left">Domein</th>
 				<th class="text-left">Domeinnaam-provider</th>
+                <th class="text-left">Status</th>
 			</tr>
 			<tr>
 				<td class="text-right">0.</td>
@@ -63,6 +64,7 @@ if(dbConnect())
 		echo "<td>".$domeinnamen[$teller]['st_roepnaam']." ".$domeinnamen[$teller]['st_tussenv']."</td>";
 		echo "<td><a href='http://www.".$domeinnamen[$teller]['dom_domein']."' target='_blank'>".$domeinnamen[$teller]['dom_domein']."</a></td>";
 		echo "<td>".$domeinnamen[$teller]['dom_provider']."</td>";
+        echo "<td>".$domeinnamen[$teller]['dom_klaar']."</td>";
 		echo "</tr>";
 		$teller++;
 	}
