@@ -16,7 +16,7 @@ function dbConnect()
       $db_connection = new PDO(
          'mysql:host=37.97.201.78;dbname=alfacollege',
          'webgebruiker',
-         '59J!ud4y'
+         WACHTWOORD: ${{ secrets.WACHTWOORD }}
       );
    } catch(PDOException $error) {
       return false;
