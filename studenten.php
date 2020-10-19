@@ -23,10 +23,6 @@ else {
     $query = $dbconnect->prepare($sql);
 }
 $query->execute();
-//$domeinnamen=$query->fetchAll(PDO::FETCH_ASSOC);
-/*echo "<pre>";
-print_r($domeinnamen);
-echo "</pre>";*/
 ?>
 <html lang="nl">
 <head>
@@ -64,7 +60,7 @@ echo "</pre>";*/
 			</tr>
 <?php	
 	$teller=0;
-	//per gevonden record wordt de output van de query bij langs gegaan: zolang er nog gevonden records zijn, gaat hij door
+	//per gevonden record wordt de data uit van de query opgehaald (fetch = ophalen): zolang er nog gevonden records zijn, gaat hij door
 	while($recset=$query->fetch(PDO::FETCH_ASSOC))
     {
         /*echo "<pre>";

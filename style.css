@@ -10,7 +10,7 @@ html {
 /*de opmaak van het element 'header' wordt hieronder geregeld*/
 header {
 	margin: 0 1%;
-	border: solid 1px;
+	/*border: solid 1px;*/
 	padding: 1%;
 }
 /*met een punt er voor verwijst naar een class*/
@@ -22,7 +22,7 @@ header {
 	margin-left: 1%;
 	margin-right: 1%;
 	width: 95%;
-	border: solid 1px;
+	/*border: solid 1px;*/
 	padding: 1%;
 }
 
@@ -30,7 +30,7 @@ header {
 	float: left;
 	margin: 0 1%;
 	width: 61%;
-	border: solid 1px;
+	/*border: solid 1px;*/
 	padding: 1%;
 	background: red;
 }
@@ -39,7 +39,7 @@ header {
 	float: right;
 	margin: 0 1%;
 	width: 30%;
-	border: solid 1px;
+	/*border: solid 1px;*/
 	padding: 1%;
 }
 
