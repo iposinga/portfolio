@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <?php 
-//include_once('db.php');
+
 include_once('dbconnection.php');
-/*
-if(dbConnect())
-{
-   if(isset($_GET['klas']))
-   { 
-	 	if(isset($_GET['cl']))
-	   		$sql = "SELECT * FROM studenten LEFT OUTER JOIN domeinen ON st_id = dom_stid WHERE st_klas='".$_GET['klas']."' AND st_cluster='".$_GET['cl']."' ORDER BY st_achternaam";
-		else
-			$sql = "SELECT * FROM studenten LEFT OUTER JOIN domeinen ON st_id = dom_stid WHERE st_klas='".$_GET['klas']."' ORDER BY st_achternaam";
-	}
-	else 
-		$sql = "SELECT * FROM studenten LEFT OUTER JOIN domeinen ON st_id = dom_stid ORDER BY st_klas, st_achternaam";
-    dbQuery($sql);
-    $domeinnamen = dbGetAll();
-}*/
 
 $dbconnect=new dbconnection();
 if(isset($_GET['klas']))
@@ -79,6 +64,7 @@ echo "</pre>";*/
 			</tr>
 <?php	
 	$teller=0;
+	//per gevonden record wordt de output van de query bij langs gegaan: zolang er nog gevonden records zijn, gaat hij door
 	while($recset=$query->fetch(PDO::FETCH_ASSOC))
     {
         /*echo "<pre>";
@@ -97,21 +83,6 @@ echo "</pre>";*/
         echo "</tr>";
         $teller++;
     }
-	/*while($teller < count($domeinnamen))
-	{
-		$nr=$teller+1;
-		echo "<tr>";
-		echo "<td class='text-right'>".$nr.". </td>";
-		echo "<td>".$domeinnamen[$teller]['st_klas']."</td>";
-		echo "<td>".$domeinnamen[$teller]['st_cluster']."</td>";
-		echo "<td>".$domeinnamen[$teller]['st_achternaam']."</td>";
-		echo "<td>".$domeinnamen[$teller]['st_roepnaam']." ".$domeinnamen[$teller]['st_tussenv']."</td>";
-		echo "<td><a href='http://www.".$domeinnamen[$teller]['dom_domein']."' target='_blank'>".$domeinnamen[$teller]['dom_domein']."</a></td>";
-		echo "<td>".$domeinnamen[$teller]['dom_provider']."</td>";
-        echo "<td>".$domeinnamen[$teller]['dom_klaar']."</td>";
-		echo "</tr>";
-		$teller++;
-	}*/
 		?>
 		</table>
 	</section>
