@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27cead18-e111-4183-b8ca-38ff3faf2209" name="Default Changelist" comment="v3 ik heb een kolom toegevoegd">
+    <list default="true" id="27cead18-e111-4183-b8ca-38ff3faf2209" name="Default Changelist" comment="v3 ww webgebruiker aangepast">
+      <change afterPath="$PROJECT_DIR$/db.example.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601973349475</updated>
-      <workItem from="1601973350598" duration="9846000" />
+      <workItem from="1601973350598" duration="10809000" />
     </task>
     <task id="LOCAL-00001" summary="v0">
       <created>1601977194707</created>
@@ -82,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602253725036</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v3 ww webgebruiker aangepast">
+      <created>1603102644050</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603102644050</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +99,7 @@
     <MESSAGE value="v1" />
     <MESSAGE value="v2 ik  heb van de titel een koptekst gemaakt" />
     <MESSAGE value="v3 ik heb een kolom toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3 ik heb een kolom toegevoegd" />
+    <MESSAGE value="v3 ww webgebruiker aangepast" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3 ww webgebruiker aangepast" />
   </component>
 </project>
