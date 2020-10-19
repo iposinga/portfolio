@@ -15,7 +15,7 @@ function dbConnect()
 
         // Stap 1. Connectie met de database
         $db_connection = new PDO(
-            'mysql:host=<often localhost>>;dbname=<databasename>',
+            'mysql:host=<often localhost>;dbname=<databasename>',
             '<username>',
             '<password>'
         );

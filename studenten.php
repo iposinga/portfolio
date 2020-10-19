@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php 
-include_once('db.php');
-
+//include_once('db.php');
+include_once('dbconnection.php');
+/*
 if(dbConnect())
 {
    if(isset($_GET['klas']))
@@ -15,7 +16,32 @@ if(dbConnect())
 		$sql = "SELECT * FROM studenten LEFT OUTER JOIN domeinen ON st_id = dom_stid ORDER BY st_klas, st_achternaam";
     dbQuery($sql);
     $domeinnamen = dbGetAll();
+}*/
+
+$dbconnect=new dbconnection();
+if(isset($_GET['klas']))
+{
+    if(isset($_GET['cl'])) {
+        $sql = "SELECT * FROM studenten LEFT OUTER JOIN domeinen ON st_id = dom_stid WHERE st_klas=:klas AND st_cluster=:cluster ORDER BY st_achternaam";
+        $query = $dbconnect->prepare($sql);
+        $query->bindParam(":klas", $_GET['klas'] );
+        $query->bindParam(":cluster", $_GET['cl'] );
+    }
+    else {
+        $sql = "SELECT * FROM studenten LEFT OUTER JOIN domeinen ON st_id = dom_stid WHERE st_klas=:klas ORDER BY st_achternaam";
+        $query = $dbconnect->prepare($sql);
+        $query->bindParam(":klas", $_GET['klas'] );
+    }
 }
+else {
+    $sql = "SELECT * FROM studenten LEFT OUTER JOIN domeinen ON st_id = dom_stid ORDER BY st_klas, st_achternaam";
+    $query = $dbconnect->prepare($sql);
+}
+$query->execute();
+//$domeinnamen=$query->fetchAll(PDO::FETCH_ASSOC);
+/*echo "<pre>";
+print_r($domeinnamen);
+echo "</pre>";*/
 ?>
 <html lang="nl">
 <head>
@@ -32,7 +58,7 @@ if(dbConnect())
 		</nav>
 	</header>
 	<section class="breed">
-		<table border="0">
+		<table>
 			<tr>
 				<th></th>
 				<th class="text-left">Klas</th>
@@ -52,8 +78,26 @@ if(dbConnect())
 				<td>hostnet</td>
 			</tr>
 <?php	
-	$teller=0;	
-	while($teller < count($domeinnamen))
+	$teller=0;
+	while($recset=$query->fetch(PDO::FETCH_ASSOC))
+    {
+        /*echo "<pre>";
+        print_r($recset);
+        echo "</pre>";*/
+        $nr=$teller+1;
+        echo "<tr>";
+        echo "<td class='text-right'>".$nr.". </td>";
+        echo "<td>".$recset['st_klas']."</td>";
+        echo "<td>".$recset['st_cluster']."</td>";
+        echo "<td>".$recset['st_achternaam']."</td>";
+        echo "<td>".$recset['st_roepnaam']." ".$recset['st_tussenv']."</td>";
+        echo "<td><a href='http://www.".$recset['dom_domein']."' target='_blank'>".$recset['dom_domein']."</a></td>";
+        echo "<td>".$recset['dom_provider']."</td>";
+        echo "<td>".$recset['dom_klaar']."</td>";
+        echo "</tr>";
+        $teller++;
+    }
+	/*while($teller < count($domeinnamen))
 	{
 		$nr=$teller+1;
 		echo "<tr>";
@@ -67,7 +111,7 @@ if(dbConnect())
         echo "<td>".$domeinnamen[$teller]['dom_klaar']."</td>";
 		echo "</tr>";
 		$teller++;
-	}
+	}*/
 		?>
 		</table>
 	</section>
