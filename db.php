@@ -16,7 +16,7 @@ function dbConnect()
       $db_connection = new PDO(
          'mysql:host=37.97.201.78;dbname=alfacollege',
          'webgebruiker',
-         'j07U0j~b'
+         '59J!ud4y'
       );
    } catch(PDOException $error) {
       return false;
