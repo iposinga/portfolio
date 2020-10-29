@@ -31,11 +31,20 @@ $query->execute();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.php">Home</a></li>
+            <li><a href="logboek.php">Logboek</a></li>
+        </ul>
+    </nav>
+    <h1>Domeinnamen portfoliopproject 1e jaars SD</h1>
+</header>
 	<header>
-        <h1>Studenten portfoliopproject 1e jaars SD</h1>
+
 		<nav>
-			<button onclick="window.location.href='studenten.php?klas=B-ITA4-1a'">klas 1a</button><button onclick="window.location.href='studenten.php?klas=B-ITA4-1a&cl=CL1'">cluster 1a-cl1</button><button onclick="window.location.href='studenten.php?klas=B-ITA4-1a&cl=CL2'">cluster 1a-cl2</button><br>
-			<button onclick="window.location.href='studenten.php?klas=B-ITA4-1b'">klas 1b</button><button onclick="window.location.href='studenten.php?klas=B-ITA4-1b&cl=CL1'">cluster 1b-cl1</button><button onclick="window.location.href='studenten.php?klas=B-ITA4-1b&cl=CL2'">cluster 1b-cl2</button>
+			<button onclick="window.location.href='index.php?klas=B-ITA4-1a'">klas 1a</button><button onclick="window.location.href='index.php?klas=B-ITA4-1a&cl=CL1'">cluster 1a-cl1</button><button onclick="window.location.href='index.php?klas=B-ITA4-1a&cl=CL2'">cluster 1a-cl2</button><br>
+			<button onclick="window.location.href='index.php?klas=B-ITA4-1b'">klas 1b</button><button onclick="window.location.href='index.php?klas=B-ITA4-1b&cl=CL1'">cluster 1b-cl1</button><button onclick="window.location.href='index.php?klas=B-ITA4-1b&cl=CL2'">cluster 1b-cl2</button>
 		</nav>
 	</header>
 	<section class="breed">
@@ -48,16 +57,16 @@ $query->execute();
 				<th class="text-left">Voornaam</th>
 				<th class="text-left">Domein</th>
 				<th class="text-left">Domeinnaam-provider</th>
-                <th class="text-left">Status</th>
+                <th class="text-left">Opmerking</th>
 			</tr>
-			<tr>
+			<!--<tr>
 				<td class="text-right">0.</td>
 				<td colspan="2">docent</td>
 				<td>Osinga</td>
 				<td>Ids</td>
 				<td><a href="http://www.idsosd.nl" target="_blank">idsosd.nl</a></td>
 				<td>hostnet</td>
-			</tr>
+			</tr>-->
 <?php	
 	$teller=0;
 	//per gevonden record wordt de data uit van de query opgehaald (fetch = ophalen): zolang er nog gevonden records zijn, gaat hij door
@@ -75,7 +84,7 @@ $query->execute();
         echo "<td>".$recset['st_roepnaam']." ".$recset['st_tussenv']."</td>";
         echo "<td><a href='http://www.".$recset['dom_domein']."' target='_blank'>".$recset['dom_domein']."</a></td>";
         echo "<td>".$recset['dom_provider']."</td>";
-        echo "<td>".$recset['dom_klaar']."</td>";
+        echo "<td>".$recset['dom_commentaar']."</td>";
         echo "</tr>";
         $teller++;
     }

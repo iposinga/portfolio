@@ -20,14 +20,19 @@ if(dbConnect())
 </head>
 <body>
 <header>
-    <h1>Logboek portfolioproject OSD</h1>
+
     <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li class="active"><a href="logboek.php">Logboek</a></li>
+        </ul>
     </nav>
+    <h1>Logboek portfolioproject OSD</h1>
 </header>
 <section class="breed">
-    <table border="0">
+    <table>
         <tr>
-            <th class="text-left">Datum</th>
+            <th class="text-left" width="10%">Datum</th>
             <th class="text-left">Logboekitem</th>
         </tr>
         <?php

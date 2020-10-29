@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27cead18-e111-4183-b8ca-38ff3faf2209" name="Default Changelist" comment="v3 ww webgebruiker aangepast">
-      <change afterPath="$PROJECT_DIR$/db.example.php" afterDir="false" />
+    <list default="true" id="27cead18-e111-4183-b8ca-38ff3faf2209" name="Default Changelist" comment="v4">
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logboek.php" beforeDir="false" afterPath="$PROJECT_DIR$/logboek.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studenten.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +17,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iUs8wkgTHAbhhNsnbmKYysUL3k" />
@@ -33,7 +37,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -44,7 +48,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601973349475</updated>
-      <workItem from="1601973350598" duration="10809000" />
+      <workItem from="1601973350598" duration="24371000" />
+      <workItem from="1603969135001" duration="2059000" />
     </task>
     <task id="LOCAL-00001" summary="v0">
       <created>1601977194707</created>
@@ -88,11 +93,57 @@
       <option name="project" value="LOCAL" />
       <updated>1603102644050</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v3 ww webgebruiker aangepast">
+      <created>1603104628452</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603104628453</updated>
+    </task>
+    <task id="LOCAL-00008" summary="v3 ww webgebruiker aangepast">
+      <created>1603105001343</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603105001343</updated>
+    </task>
+    <task id="LOCAL-00009" summary="v4">
+      <created>1603116621668</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603116621668</updated>
+    </task>
+    <task id="LOCAL-00010" summary="v4">
+      <created>1603129696844</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603129696844</updated>
+    </task>
+    <task id="LOCAL-00011" summary="v4">
+      <created>1603130977926</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603130977926</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v0" />
@@ -100,6 +151,7 @@
     <MESSAGE value="v2 ik  heb van de titel een koptekst gemaakt" />
     <MESSAGE value="v3 ik heb een kolom toegevoegd" />
     <MESSAGE value="v3 ww webgebruiker aangepast" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3 ww webgebruiker aangepast" />
+    <MESSAGE value="v4" />
+    <option name="LAST_COMMIT_MESSAGE" value="v4" />
   </component>
 </project>
