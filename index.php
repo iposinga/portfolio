@@ -34,6 +34,7 @@
 				<th class="text-left">Domein</th>
 				<th class="text-left">Domeinnaam-provider</th>
                 <th class="text-left">Opmerking</th>
+                <th class="text-left">Kak</th>
 			</tr>
 		</table>
 	</section>
